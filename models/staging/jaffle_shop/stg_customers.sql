@@ -12,7 +12,7 @@ staged as (
         first_name,
         last_name
 
-    from source
+    from {{source('jaffle_shop', 'customers')}}
 
 )
 

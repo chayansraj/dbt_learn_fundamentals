@@ -14,7 +14,7 @@ staged as (
         order_date,
         status
 
-    from source
+    from {{ source('jaffle_shop', 'orders') }}
 
 )
 
